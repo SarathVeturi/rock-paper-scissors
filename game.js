@@ -12,7 +12,7 @@ function computerPlay()
 
 function playRound()
 {
-    playerSelection=prompt("Enter your choice").toLowerCase();
+    playerSelection=prompt("Enter rock/paper/scissors").toLowerCase();
     if(playerSelection!=="rock" && playerSelection!=="paper" && playerSelection!=="scissors")
     {
         alert("enter any one of rock, paper, scissors(CASE-INSENSITIVE)");
