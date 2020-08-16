@@ -23,11 +23,11 @@ function playRound()
         {
             computerSelection=choices[computerPlay()].toLowerCase();
         }
-    console.log(`Computer chose ${computerSelection}`);
+    let comp_choice=`Computer chose ${computerSelection}. You chose ${playerSelection}`;
     if(playerSelection==="rock" && computerSelection==="paper")
         //console.log("You lose...You are wrapped by the paper!");
         {
-            para.textContent="You lose...You are wrapped by the paper!";
+            para.textContent=`${comp_choice}.Ooops...!You are wrapped by the paper:(`;
             computer_score++;
             comp.innerHTML=computer_score;
             play.innerHTML=player_score;
@@ -35,7 +35,7 @@ function playRound()
     else if(playerSelection==="rock" && computerSelection==="scissors")
         //console.log("You win...Rock beats the scissors!");
         {
-            para.textContent="You win...Rock beats the scissors!";
+            para.textContent=`${comp_choice}.Hurray...!Rock beats the scissors:)`;
             player_score++;
             comp.innerHTML=computer_score;
             play.innerHTML=player_score;
@@ -43,7 +43,7 @@ function playRound()
     else if(playerSelection==="paper" && computerSelection==="rock")
         //console.log("You win...Paper wraps the rock");
         {
-            para.textContent="You win...Paper wraps the rock";
+            para.textContent=`${comp_choice}.Hurray...!Paper wraps the rock:)`;
             player_score++;
             comp.innerHTML=computer_score;
             play.innerHTML=player_score;
@@ -51,7 +51,7 @@ function playRound()
     else if(playerSelection==="paper" && computerSelection==="scissors")
         //console.log("You lose...You are cut by the scissors");
         {
-            para.textContent="You lose...You are cut by the scissors";
+            para.textContent=`${comp_choice}.Ooops...!You are cut by the scissors:(`;
             computer_score++;
             comp.innerHTML=computer_score;
             play.innerHTML=player_score;
@@ -59,7 +59,7 @@ function playRound()
     else if(playerSelection==="scissors" && computerSelection==="rock")
         //console.log("You lose...You are beaten by the rock!");
         {
-            para.textContent="You lose...You are beaten by the rock!";
+            para.textContent=`${comp_choice}.Ooops...!You are beaten by the rock:(`;
             computer_score++;
             comp.innerHTML=computer_score;
             play.innerHTML=player_score;
@@ -67,7 +67,7 @@ function playRound()
     else if(playerSelection==="scissors" && computerSelection==="paper")
         //console.log("You win...You have cut the paper!");
         {
-            para.textContent="You win...You have cut the paper!";
+            para.textContent=`${comp_choice}.Hurray...!You have cut the paper:)`;
             player_score++;
             comp.innerHTML=computer_score;
             play.innerHTML=player_score;
