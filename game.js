@@ -30,12 +30,14 @@ let buttons=document.querySelectorAll(".buttons");
                 if(check.toLocaleLowerCase()==="yes")
                 {    
                     alert("You are about to start again");
+                    para.textContent="";
                     para.style.color="white";
                     game();
                 }
                 else
                 {
                     alert("Thank you for playing the game"); 
+                    para.textContent="";
                     para.style.color="white";
                 }
             }
